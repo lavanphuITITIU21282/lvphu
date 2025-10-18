@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3-Column Flexbox Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Header and Footer */
+    header, footer {
+      background: teal;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    /* Main container */
+    .container {
+      display: flex;
+      justify-content: center; /* center the 3 columns */
+      max-width: 1000px;       /* fixed width */
+      margin: 0 auto;
+      min-height: 400px;
+    }
+    /* Left sidebar */
+    .sidebar-left {
+      flex: 0 0 200px;   /* fixed 200px */
+      background: #f2f2f2;
+      padding: 15px;
+    }
+    /* Main content */
+    .main {
+      flex: 0 0 600px;   /* fixed 600px */
+      background: #fff;
+      padding: 15px;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+    /* Right sidebar */
+    .sidebar-right {
+      flex: 0 0 200px;   /* fixed 200px */
+      background: #f9f9f9;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar-left">
+      <h2>Sidebar A</h2>
+      <p>Left sidebar content
