@@ -2,90 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CV - La Van Phu</title>
+  <title>San Joaquin Valley Town Hall</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f2f5;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 40px;
+      padding: 0;
+      background: #fff;
+      color: #333;
     }
-    .cv-container {
-      max-width: 800px;
-      margin: auto;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    header {
+      background: orange;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
-    h1 {
-      color: #2c3e50;
-      margin-bottom: 5px;
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 18px;
+      font-style: italic;
+    }
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    main {
+      flex: 2;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+    aside {
+      flex: 1;
+      padding: 20px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
     }
     h2 {
-      color: #34495e;
-      margin-top: 30px;
-    }
-    p, li {
-      line-height: 1.6;
+      color: teal;
+      margin-top: 0;
     }
     ul {
       padding-left: 20px;
     }
-    .contact a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-    .highlight {
-      font-weight: bold;
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="cv-container">
-    <h1>La Van Phu</h1>
-    <p><strong>Position:</strong> Full-Stack Developer</p>
-    <p><strong>Email:</strong> lavanphu.dev@gmail.com</p>
-    <p><strong>Phone:</strong> +84 975550764</p>
+  <header>
+    <h1>San Joaquin Valley Town Hall</h1>
+    <p>Bringing cutting-edge speakers to the valley</p>
+  </header>
 
-    <h2>Profile</h2>
-    <p>A passionate developer with a strong interest in building modern web applications and solving complex problems with clean and efficient code.</p>
+  <div class="container">
+    <main>
+      <h2>This season's guest speakers</h2>
+      <ul>
+        <li>David Brancaccio</li>
+        <li>Andrew Ross Sorkin</li>
+        <li>Amy Chua</li>
+        <li>Scott Sampson</li>
+        <li>Charles Mann</li>
+      </ul>
 
-    <h2>Education</h2>
-    <ul>
-      <li>2021 - 2025: University of Information Technology, Ho Chi Minh City – Major in Computer Science</li>
-    </ul>
+      <h2>Looking for a unique gift?</h2>
+      <p>
+        For a tax-deductible donation of only $100, you can get a book of tickets 
+        for the entire season of speakers. And the bargain includes a free Town Hall coffee mug! 
+        It's a great gift for friends and family.
+      </p>
+      <p><strong>Call us by phone at (559) 555-1212 for ticket information.</strong></p>
+    </main>
 
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript (React, Vue)</li>
-      <li>Node.js, Express.js</li>
-      <li>Python (Flask, Django)</li>
-      <li>MySQL, MongoDB</li>
-      <li>Git, GitHub, Docker</li>
-      <li>RESTful APIs, GraphQL</li>
-    </ul>
+    <aside>
+      <h2>Lecture notes</h2>
+      <h3>Event change for November</h3>
+      <p>
+        SV Town Hall is honored to announce that Edward O. Wilson has agreed to speak 
+        in place of Jared Diamond, who had to cancel for personal reasons. 
+        Wilson will speak on November 15.
+      </p>
 
-    <h2>Work Experience</h2>
-    <ul>
-      <li><span class="highlight">2023 – Present:</span> Developer at TechNova – Built internal management systems using React and Node.js</li>
-      <li><span class="highlight">2022 – 2023:</span> Intern at DevHub – Contributed to e-commerce website development</li>
-      <li><span class="highlight">2021 – 2022:</span> Freelancer – Designed landing pages and personal blogs for clients</li>
-    </ul>
-
-    <h2>Featured Projects</h2>
-    <ul>
-      <li><strong>SmartTask:</strong> Team task management app (React + Firebase)</li>
-      <li><strong>PhuBlog:</strong> Personal blog with CMS integration (Next.js + MongoDB)</li>
-      <li><strong>ShopX:</strong> E-commerce site with cart and payment system (Vue + Node.js)</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p class="contact">
-      <strong>GitHub:</strong> <a href="https://github.com/lavanphu" target="_blank">github.com/lavanphu</a><br>
-      <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/lavanphu" target="_blank">linkedin.com/in/lavanphu</a><br>
-      <strong>Facebook:</strong> <a href="https://facebook.com/la.van.phu" target="_blank">facebook.com/la.van.phu</a>
-    </p>
+      <h3>Lecture day, time, and location</h3>
+      <p>
+        All lectures are on Wednesday mornings, 10:00 to 11:30 a.m., 
+        at the Saroyan Theatre, 730 M Street, Fresno, CA.
+      </p>
+    </aside>
   </div>
+
+  <footer>
+    <p>© Copyright 2022 San Joaquin Valley Town Hall</p>
+  </footer>
 </body>
 </html>
