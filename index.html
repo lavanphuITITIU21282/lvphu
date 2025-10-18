@@ -2,109 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>San Joaquin Valley Town Hall</title>
+  <title>Exercise 3 – 3-Column Flexbox Layout</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #fff;
-      color: #333;
     }
-    header {
-      background: orange;
+    /* Header and Footer */
+    header, footer {
+      background: teal;
       color: white;
       text-align: center;
       padding: 20px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 18px;
-      font-style: italic;
-    }
+    /* Main container */
     .container {
-      display: flex;
-      max-width: 1000px;
-      margin: 20px auto;
-      gap: 20px;
+      display: flex;              /* Flexbox container */
+      justify-content: center;    /* center the 3 columns */
+      max-width: 1000px;          /* fixed width layout */
+      margin: 0 auto;
+      min-height: 400px;
     }
-    main {
-      flex: 2;
-      padding: 20px;
-      background: #fff;
-      border: 1px solid #ddd;
-    }
-    aside {
-      flex: 1;
-      padding: 20px;
-      background: #f9f9f9;
-      border: 1px solid #ddd;
-    }
-    h2 {
-      color: teal;
-      margin-top: 0;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
+    /* Left sidebar */
+    .sidebar-left {
+      flex: 0 0 200px;   /* fixed 200px */
+      background: #f2f2f2;
       padding: 15px;
-      margin-top: 20px;
+    }
+    /* Main content */
+    .main {
+      flex: 0 0 600px;   /* fixed 600px */
+      background: #fff;
+      padding: 15px;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+    /* Right sidebar */
+    .sidebar-right {
+      flex: 0 0 200px;   /* fixed 200px */
+      background: #f9f9f9;
+      padding: 15px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>San Joaquin Valley Town Hall</h1>
-    <p>Bringing cutting-edge speakers to the valley</p>
+    <h1>Header</h1>
   </header>
 
   <div class="container">
-    <main>
-      <h2>This season's guest speakers</h2>
-      <ul>
-        <li>David Brancaccio</li>
-        <li>Andrew Ross Sorkin</li>
-        <li>Amy Chua</li>
-        <li>Scott Sampson</li>
-        <li>Charles Mann</li>
-      </ul>
+    <aside class="sidebar-left">
+      <h2>Sidebar A</h2>
+      <p>Left sidebar content</p>
+    </aside>
 
-      <h2>Looking for a unique gift?</h2>
-      <p>
-        For a tax-deductible donation of only $100, you can get a book of tickets 
-        for the entire season of speakers. And the bargain includes a free Town Hall coffee mug! 
-        It's a great gift for friends and family.
-      </p>
-      <p><strong>Call us by phone at (559) 555-1212 for ticket information.</strong></p>
+    <main class="main">
+      <h2>Main Content</h2>
+      <p>This is the main content area of the page.</p>
     </main>
 
-    <aside>
-      <h2>Lecture notes</h2>
-      <h3>Event change for November</h3>
-      <p>
-        SV Town Hall is honored to announce that Edward O. Wilson has agreed to speak 
-        in place of Jared Diamond, who had to cancel for personal reasons. 
-        Wilson will speak on November 15.
-      </p>
-
-      <h3>Lecture day, time, and location</h3>
-      <p>
-        All lectures are on Wednesday mornings, 10:00 to 11:30 a.m., 
-        at the Saroyan Theatre, 730 M Street, Fresno, CA.
-      </p>
+    <aside class="sidebar-right">
+      <h2>Sidebar B</h2>
+      <p>Right sidebar content</p>
     </aside>
   </div>
 
   <footer>
-    <p>© Copyright 2022 San Joaquin Valley Town Hall</p>
+    <h2>Footer</h2>
   </footer>
 </body>
 </html>
